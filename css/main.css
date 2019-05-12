@@ -1,0 +1,1068 @@
+ /* Спецификация */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0000ae;
+    letter-spacing: 0.4px;
+}
+
+h1, h2, h3, h4, p, span, img, a{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.white {
+    color: #fff;
+}
+
+/* Главная */
+
+/* Первый экран */
+
+.head {
+    background: #fff url(../img/bg1.jpg) no-repeat left top / cover;
+}
+
+.logo {
+    padding: 15px 0;
+    transition: all 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+.menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-top: 30px;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: #0000ae;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.menu__item:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #0000ae;
+}
+
+nav {
+    margin: 0 0 140px 0;/* 
+    background-color: #fff; */
+}
+            
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+            
+/* применяем inline-block позиционирование к элементам навигации */
+/* nav ul li {
+    margin: 0px -7px 0 0;
+    
+} */
+            
+/* стилизуем ссылки */
+nav a {
+    display:block;
+    padding:0 10px;
+    text-decoration:none;
+}
+            
+/* изменяем цвет фона при наведении курсора */
+.menu__item_add:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #0000ae;
+} 
+
+.menu__item_add {
+    font-size: 16px;
+    color: #0000ae;
+    display: block;
+    padding: 5px 20px;
+    
+}
+
+nav ul ul {
+    display: none;
+    background: #e2e2f5;
+    box-shadow:0 0 35px 7px #6a6a6a;
+    position: absolute;
+}
+            
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display:inherit;
+    color: #000;
+}
+            
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    float:none;
+    display:list-item;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul ul li:hover {
+    
+}
+
+.nav {
+    display: none;
+}
+
+.underline {
+    margin-top: -110px;
+    height: 1px;
+    background: #0000ae;
+} 
+
+/* .header__contact {
+    margin-top: -120px;
+}
+
+.header__contact_item {
+    color: #0000ae;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.header__contact_item:hover {
+    color: #0000ae;
+    text-decoration: none;
+} */
+
+.title {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.name-company {
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 3px;   
+}
+
+.director {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+.title__desc {
+    margin-top: 8px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 23px;
+}
+
+.buttons {
+    padding-bottom: 170px;
+}
+
+.buttons__btn {
+    margin-left: 135px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    color: #fff;
+    padding: 13px 43px;
+    background: #0000ae;
+    border-radius: 7px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.btn:hover {
+    color: #fff;
+    margin-top: 4px;
+    /* opacity: 0.85; */
+    text-decoration: none;
+}
+
+.btn1 {
+    color: #0000ae;
+    padding: 13px 39px;
+    border: 2px solid #0000ae;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 12px;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    color: #fff;
+    background: #0000ae;
+    text-decoration: none;
+}
+
+.head__sale {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+span {
+    background: #0000ae;
+    color: #000;
+    border-radius: 2px;
+}
+
+/* Второй экран */
+
+.services {
+    padding-top: 60px;
+    padding-bottom: 115px;
+}
+
+.sevices__bg {
+    margin-top: 95px;
+    height: 630px;
+    width: 100%;
+    box-shadow: 0 0 35px 7px #6a6a6a;
+}
+
+.services__photo {
+    margin-top: -25px;
+    margin-bottom: -25px;
+    margin-left: 25px;
+    box-shadow: 0 0 35px 7px #6a6a6a;
+    transition: all 0.3s ease;
+}
+
+.services__photo:hover {
+    transform: scale(1.01);
+}
+
+.services__list {
+    width: 445px;
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.services__list_item {
+    margin-top: 12px;
+}
+
+
+.services__btn {
+    display: block;
+    width: 230px;
+    margin-top: 23px;
+    margin-left: 55px;
+}
+
+/*Третий экран */
+
+.advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #000 url(../img/bg2.jpg) no-repeat center top / cover;
+}
+
+.advantages__block {
+    margin-top: 80px;
+    line-height: 32px;
+}
+
+.advantages__icon {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.advantages__icon:hover {
+    transform: scale(1.05);
+}
+
+.advantages__text {
+    margin-top: 15px;
+}
+
+/* Отзывы */
+
+.comment {
+    padding: 100px 0 40px 0;
+}
+
+.commecnt__photo {
+    display: inline-block;
+    width: 260px;
+    height: 310px;
+    margin-right: 35px;
+}
+
+.comment__item {
+    margin-top: 60px;
+}
+
+.comment__name {
+    margin-top: 10px;
+}
+
+.job {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.owl-nav {
+    display: block;
+    margin-top: -250px;
+}
+
+.owl-prev {
+    float : left;
+}
+
+.owl-next {
+    display: block;
+    float: right;
+}
+
+.comment__btn {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* Контакты */
+
+.contact {
+    padding: 100px 0;
+    background: url(../img/bg3.jpg) no-repeat center top  / cover;
+}
+
+.map {
+    margin-top: 63px;
+    box-shadow:0 0 35px 7px #6a6a6a; 
+    border-radius: 7px;
+}
+
+.adress {
+    margin-top: 70px;
+}
+
+.contact__tel {
+    margin: 8px 0;
+}
+.contact__tel_item {
+    color: #0000ae;
+    text-decoration: none;
+    margin-left: 13px;
+}
+
+.contact__tel_item:hover {
+    color: #0000ae;
+    text-decoration: none;
+}
+
+.mail__text {
+    color: #0000ae;
+    border-top: none;
+    font-size: 18px;
+    margin-left: 13px;
+    margin-bottom: 25px;
+}
+
+.mail__text:hover {
+    color: #0000ae;
+}
+
+.contact__btn {
+    display: block;
+    margin-top: 30px;
+}
+
+/* Футер */
+
+.footer {
+    padding-top: 50px;
+    background: #06068b;
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.footer__logo {
+    text-align: center;
+}
+
+.footer__logo-text {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer__logo-text:hover {
+    color: #fff;
+    text-decoration: none;   
+}
+
+.footer__services {
+    margin-bottom: 35px;
+}
+.footer__services-title {
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer__services_item {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer__menu {
+    margin: 50px 0 40px 0;
+}
+
+.footer__menu_item {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 12px;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.footer__menu_item:hover {
+    padding: 3px 12px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.footer__btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer__btn:hover {
+    color: #0000ae;
+    border-color: #fff;
+    background: #fff;
+}
+
+
+.credits {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/* Для физических лиц */
+
+.main-person {
+    background: #fff url(../img/person-bg1.jpg) no-repeat left top / cover;
+    padding-bottom: 277px;
+}
+
+.main-person__title {
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.main-person__desc {
+    margin-top: 15px;
+}
+
+.main-person__check {
+    height: 100%;
+    margin-top: 7px;
+    padding-right: 25px;
+}
+
+.main-person__text {
+    width: 725px;
+}
+
+.main-person__offer {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.main-person__btn {
+    width: 235px;
+    position: absolute;
+}
+
+.person-services {
+    padding: 100px 0;
+}
+
+.person-services__title {
+    margin-bottom: 50px;
+}
+
+.person-services__margin {
+    margin-bottom: 70px;
+}
+
+
+/* Для организаций и ИП */
+
+.main-org {
+    background: #fff url(../img/org-bg1.jpg) no-repeat center center / cover;
+    padding-bottom: 225px;
+}
+
+.main-org__text {
+    text-indent: 30px;
+    width: 725px;
+}
+
+.main-org__text:nth-child(2) {
+    margin-top: 20px
+}
+
+.main-org__text:nth-child(4) {
+    margin-bottom: 30px
+}
+
+.outsourcing {
+    background: #fff url(../img/org-bg2.jpg) no-repeat center top / cover;
+    padding: 110px 0;
+}
+
+.outsourcing__text {
+    text-indent: 30px;
+    margin: 40px 0 70px 0;
+    line-height: 36px;
+}
+
+.org-advantages {
+    text-align: center;
+}
+
+.org-advantages__title {
+    margin: 30px 0 15px 0;
+}
+
+.org-services {
+    padding: 70px 0;
+}
+
+
+/* Цены */
+
+.main-price {
+    background: #fff url(../img/price-bg.jpg) no-repeat left top / cover;
+}
+
+.price-woman {
+    margin-top: -60px;
+}
+
+.price-advantages:nth-child(1) {
+    margin-top: -70px;
+}
+
+.price-advantages {
+    margin-bottom: 30px;
+}
+
+.price-advantages__icon {
+    height: 100%;
+    padding-right: 40px;
+}
+
+.price-advantages__text {
+    margin-top: 15px;
+}
+
+.price-buttons {
+    padding-top: 30px;
+}
+
+.no-active-btn {
+    display: block;
+    color: #fff;
+    padding: 13px 43px;
+    background: #6565f9;
+    border-radius: 7px;
+    text-align: center;
+    opacity: 0.9
+}
+
+.download {
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+/* Модальное окно заявки */
+
+.form_bg{
+    background: #fff url(../img/form.jpg);
+    border-radius: 7px; 
+    background-size: 100% 100%; 
+    pointer-events: auto;
+    background-position: center center;
+    text-align: center;
+    box-shadow:0 0 35px 7px #000; 
+    margin-top: 30%;
+}
+#modal_form{
+    padding: 8%;
+    /* padding-left: 15%;
+    padding-right: 15% */
+
+}
+
+.form-control {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-control:nth-child(1) {
+    margin-top: 15px;
+}
+
+
+/* Модальное окно заявки */
+
+
+.form-control {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-control:nth-child(1) {
+    margin-top: 15px;
+}
+
+.photo-file {
+    text-align: left;
+}
+
+.photo-file__text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7b7a7a;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Медиа-запросы */
+
+ @media screen and (max-width: 1200px) { 
+    .buttons__btn {
+    margin-left: 80px;
+    }
+
+    .services__photo {
+    box-shadow: 0 0 35px 7px #6a6a6a;
+    transition: all 0.3s ease;
+    width: 380px;
+    }
+    
+    .map {
+        width: 460px;
+    }
+    
+    .adress {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+        .menu {
+            display: none;
+        }
+        
+        .logo {
+            float: right;
+        }
+
+        .nav {
+            display: block;
+        }
+
+        input {display: none;}
+        label {cursor: pointer;}
+
+        .nav {user-select: none;}
+
+        .nav__showmenu {
+            position: absolute;
+            z-index: 3;
+            display: inline-block;
+            margin-left: -10px;
+            top: 2px;
+            font-size: 23px;
+            margin: 20px;
+        }
+
+        .nav__back {
+            position: fixed;
+            top: 0;
+            /*  ЗДЕСЬ!!! */
+            width: 40px;
+            right: 0;  
+            bottom: 0;
+            left: 0;
+            transition: background-color .3s;
+        }
+
+        .menu, .menu__submenu{
+            list-style: none;
+            padding: 0;
+            color: #fff;
+            overflow: hidden;
+          }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 220px;
+            margin: 0;
+            padding: 17px 0;
+            text-transform: uppercase;
+            line-height: 2em;
+            background-color: #2c2c2c;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            transform: translateX(-100%);
+            transition: transform .3s;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .menu__submenu {
+            width: 100%;
+            font-size: 12px;
+            background-color: #ddd;
+            max-height: 0;
+            transition: max-height .3s ease-in-out;
+        }
+
+        .menu__showsub {
+            position: absolute;
+            right: 0;
+            margin-top: -34px;
+            padding: 10px;
+            line-height: normal;
+        }
+
+        .menu__item {  
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .menu__submenu .menu__item {color: #000;}
+
+        .nav__check:checked~.nav__back {
+            background-color: rgba(0,0,0,.2);
+            bottom: 0;
+        }
+
+        .menu__item:hover,.nav__showmenu:hover,.menu__showsub:hover {opacity: 0.7;}
+        .menu::-webkit-scrollbar {display: none;}
+        .nav__check:checked+.nav__showmenu {color:#fff;}
+        .menu__check:checked~.menu__submenu {max-height: 100vh;}
+        .menu__check:checked+.menu__showsub {transform: rotate(180deg);}
+        .nav__check:checked~.menu {transform: translateX(0);}
+
+
+        .underline {
+            margin-top: -140px;
+        }
+
+        .buttons__btn{
+            margin-left: 115px;
+        }
+        
+        .services__photo {
+            display: none;
+        }
+        
+
+        .sevices__bg {
+            margin-top: 45px;
+        }
+
+        .services__list {
+            width: 600px
+        }
+
+        .commecnt__photo {
+            width: 150px;
+        }
+
+        .comment__text {
+            width: 330px
+        }
+
+        .map {
+            width: 100%
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .footer__services-title {
+            margin-top: 30px;
+        }
+
+        .footer__menu {
+            margin-top: 0px;
+        }
+
+        .credits {
+            margin-top: 40px;
+        }
+
+
+        .person-services__photo {
+            display: none;
+        }
+
+        .price-woman {
+            display: none;
+        }
+
+        .main-price {
+            padding-bottom: 70px;
+        }
+}
+ 
+@media screen and (max-width: 768px) {
+    .buttons__btn {
+        margin-left: 25px;
+    }
+    
+    .sevices__bg {
+        height: 700px;
+    }
+
+    .services__list {
+        width: 400px
+    }
+
+   .commecnt__photo {
+        display: block;
+        height: 310px;
+        width: 260px;
+   }
+
+   .comment__text {
+   }
+
+   .comment__item {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+       }
+
+   .main-org__text {
+        width: 100%
+    }
+    
+    .org-advantages {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .comment__item {
+        width: 100%;
+    }
+    .advantages__block {
+        flex-direction: column;
+    }
+    .advantages__icon {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .advantages {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .sevices__bg {
+        height: 710px
+    }
+
+    .services__list {
+        width: 370px;        
+    }
+    
+    .buttons {
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .buttons__btn {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .btn1 {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .services__btn {
+        margin-left: 10px;
+        width: 430px; 
+    }
+    
+    .price-buttons {
+        flex-direction: column;
+    }
+
+    .no-active-btn {
+        margin-bottom: 10px
+    }
+}  
+
+@media screen and (max-width: 460px) {
+    .sevices__bg {
+        height: 810px
+    }
+
+    .services__list {
+        width: 320px;        
+    }
+
+    .services__btn {
+        margin-left: 10px;
+        width: 350px; 
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .name-company {
+        font-size: 20px;
+    }
+    
+    .director {
+        font-size: 16px;
+    }
+    
+    .title__main {
+        font-size: 25px;
+    }
+    
+    .title__desc {
+        font-size: 22px;
+    }
+
+    .sevices__bg {
+        height: 890px
+    }
+
+    .services__list {
+        width: 250px;
+        margin-left: 20px;
+
+    }
+
+    .services__btn {
+        margin-left: 10px;
+        width: 260px; 
+    }
+    
+    .price-advantages__icon {
+        padding-right: 10px;
+    }
+
+}
